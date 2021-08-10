@@ -10,8 +10,6 @@ services:
     tty: true
   chrome-node-1:
     image: selenium/node-chrome:latest
-    build:
-      context: .
     depends_on:
       - selenium-hub
     environment:
@@ -24,8 +22,6 @@ services:
     tty: true
   chrome-node-2:
     image: selenium/node-chrome:latest
-    build:
-      context: .
     depends_on:
       - selenium-hub
     environment:
@@ -38,8 +34,6 @@ services:
     tty: true
   chrome-node-3:
     image: selenium/node-chrome:latest
-    build:
-      context: .
     depends_on:
       - selenium-hub
     environment:
@@ -52,8 +46,6 @@ services:
     tty: true
   chrome-node-4:
     image: selenium/node-chrome:latest
-    build:
-      context: .
     depends_on:
       - selenium-hub
     environment:
